@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Организация</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
+    
+</head>
+<body>
+    <!-- ШАПКА -->
+    <div class="navbar">
+        <p class="logo-text">
+            <img alt="Organization Logo" height="50" src="img/logo.png" width="150"/>
+            Общероссийская организация профсоюза работников образования и науки Российской Федерации в Александрове
+        </p>
+        <div>
+            <a href="#">О нас</a>
+            <a href="#">Мероприятия</a>
+            <a href="#">Календарь событий</a>
+            <a href="#">Заказать мероприятие</a>
+            <a id="userLink" href="login.html">Вход/Регистрация</a>
+            <img id="avatar" src="" alt="Avatar" style="display:none; width: 40px; height: 40px; border-radius: 50%;"/>
+            <div class="icon-container">
+                <div class="profile-icon" id="profile-icon" style="display:none;"></div> 
+            </div>
+        </div>
+    </div>
+    
+    <!-- СЛАЙДЕР -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="text">
+                    <h1>ЧИТАЙТЕ НОВОСТИ ОРГАНИЗАЦИИ В TELEGRAM</h1>
+                    <p>Telegram-канал «Сила Профсоюза в тебе» Региональной организации Общероссийского Профсоюза образования в Александрове. Нажимайте на кнопку и читайте актуальные новости.</p>
+                    <a class="button" href="#">Читать</a>
+                </div>
+                <div class="image">
+                    <img alt="Hand holding a smartphone displaying a Telegram channel" height="800" src="https://storage.googleapis.com/a1aa/image/VUV7ffTaevB5yocQSQWZNZ8XTJ1ZKezYGvqVhQy0LvqLadWOB.jpg" width="400"/>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="text">
+                    <h1>СЛАЙД 2: ЧИТАЙТЕ НОВОСТИ ОРГАНИЗАЦИИ В TELEGRAM</h1>
+                    <p>Telegram-канал «Сила Профсоюза в тебе» Региональной организации Общероссийского Профсоюза образования в Александрове. Нажимайте на кнопку и читайте актуальные новости.</p>
+                    <a class="button" href="#">Читать</a>
+                </div>
+                <div class="image">
+                    <img alt="Hand holding a smartphone displaying a Telegram channel" height="800" src="https://storage.googleapis.com/a1aa/image/VUV7ffTaevB5yocQSQWZNZ8XTJ1ZKezYGvqVhQy0LvqLadWOB.jpg" width="400"/>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="text">
+                    <h1>СЛАЙД 3: ЧИТАЙТЕ НОВОСТИ ОРГАНИЗАЦИИ В TELEGRAM</h1>
+                    <p>Telegram-канал «Сила Профсоюза в тебе» Региональной организации Общероссийского Профсоюза образования в Александрове. Нажимайте на кнопку и читайте актуальные новости.</p>
+                    <a class="button" href="#">Читать</a>
+                </div>
+                <div class="image">
+                    <img alt="Hand holding a smartphone displaying a Telegram channel" height="800" src="https://storage.googleapis.com/a1aa/image/VUV7ffTaevB5yocQSQWZNZ8XTJ1ZKezYGvqVhQy0LvqLadWOB.jpg" width="400"/>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    
+    <section class="main-container1">
+        <div class="main-container">
+            <!-- МЕРОПРИЯТИЯ -->
+            <div class="content-section">
+                <h2>Мероприятия</h2>
+                <div class="event-list">
+                    <div class="event-item">
+                        <img alt="Event 1 Image" src="img/den_molodezhi.webp"/>
+                        <h3>С ДНЕМ МОЛОДЕЖИ</h3>
+                        <p>Сегодня мы отмечаем День молодежи, праздник вдохновения и новых возможностей! Пусть ваша энергия и креативность меняют мир к лучшему!</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+
+                    <div class="event-item">
+                        <img alt="Event 2 Image" src="img/23.jpg"/>
+                        <h3>23 ФЕВРАЛЯ!</h3>
+                        <p>С 23 февраля, настоящие защитники! В этот день мы чествуем вашу силу и мужество, которые охраняют мир и спокойствие нашей страны!</p>
+                    </div>
+
+                    <div class="event-item">
+                        <img alt="Event 3 Image" src="img/29042022expert_konsul_sovet_1_may.jpg"/>
+                        <h3>ДЕНЬ ТРУДА</h3>
+                        <p>С Днем труда! Этот день символизирует уважение к каждому, кто трудится на благо общества. Пусть ваша работа приносит радость и удовлетворение!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- СТАТИСТИКА -->
+            <div class="content-section">
+                <h2>РЕГИОНАЛЬНАЯ ОРГАНИЗАЦИЯ ОБЩЕРОССИЙСКОГО ПРОФСОЮЗА ОБРАЗОВАНИЯ В АЛЕКСАНДРОВЕ</h2>
+                <div class="statistics">
+                    <div class="statistic-item">
+                        <h3 class="count" data-target="60">0</h3>
+                        <p>профсоюзных организаций</p>
+                    </div>
+
+                    <div class="statistic-item">
+                        <h3 class="count" data-target="8000">0</h3>
+                        <p>членов профсоюза</p>
+                    </div>
+
+                    <div class="statistic-item">
+                        <h3 class="count" data-target="34418450">0</h3>
+                        <p>средств направлено на помощь</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <div class="footer">
+        <div class="footer-left">
+            <img alt="Organization Logo" height="50" src="img/logo.png" width="50"/>
+            <p>Общероссийская организация профсоюза работников образования и науки Российской Федерации в Александрове</p>
+        </div>
+        <div class="footer-right">
+            <div class="resources">
+                <p>Наши контакты:</p>
+                <div class="contact-info">
+                    <p>
+                        <svg height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.21c1.21.49 2.53.76 3.88.76.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C10.29 22 2 13.71 2 3.5 2 2.95 2.45 2.5 3 2.5H6.5c.55 0 1 .45 1 1 0 1.35.27 2.67.76 3.88a1.003 1.003 0 01-.21 1.11l-2.2 2.2z" fill="#000"/>
+                        </svg>
+                        Телефон: 8-800-555-35-35
+                    </p>
+                    <p>
+                        <svg height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 2c-.55 0-1 .45-1 1v18c0 .55.45 1 1 1h18c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1H3zm16 17H5v-2h14v2zm0-4H5v-2h14v2zm0-4H5V9h14v2zm0-4H5V5h14v2z" fill="#000"/>
+                        </svg>
+                        Email: info@example.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

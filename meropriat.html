@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="css/meropriat.css">
+    <script src="script/meropriat.js" defer></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index7.html">
+            <p class="logo-text"><img alt="Логотип организации" height="50" src="img/logo.png" width="150"/>Общероссийская организация профсоюза работников образования и науки Российской Федерации в Александрове</p> 
+        </a>
+        <div class="nav-barimg">
+            <a href="#">О нас</a>
+            <a href="#">Мероприятия</a>
+            <a href="#">Календарь событий</a>
+            <a href="lich.html">Заказать мероприятие</a>
+
+            <div class="profile-container" onclick="toggleDropdown()">
+                <a href="lich.html">
+                    <img id="profile-pic" src="img/free-icon-boy-4537069.png" alt="Фотография профиля" style="cursor:pointer;"/>
+                </a>
+                <ul id="dropdown" class="dropdown-content">
+                    <li><a href="lich.html" onclick="viewProfile()">Профиль</a></li>
+                    <li><a href="lich.html" onclick="viewProfile()">Мои заявки</a></li>
+                    <li><a href="login.html" onclick="logout()">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="main-container1">
+        <div class="main-container">
+            <div class="content-section">
+                <h2>Мероприятия</h2>
+                <div class="event-list"></div> 
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

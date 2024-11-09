@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админка</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/mer.css">
+    <script src="script/admin.js" defer></script>
+</head>
+<body>
+    <div class='login-container' id='loginContainer' style='display:none;'>
+        <form id='adminLoginForm'>
+            <h2>Введите пароль для доступа к админке</h2>
+            <div class='form-group'>
+                <label for='admin-password'>Пароль:</label>
+                <input type='password' id='admin-password' required>
+                <button type='button' id='togglePassword'>👁️</button> 
+            </div>
+            <button type='submit'>Войти</button>
+        </form>
+    </div>
+
+    <div class='sidebar' id='sidebar' style='display:none;'>
+        <img src='img/free-icon-boy-4537069.png' alt='Логотип'> 
+        <h2>Админка</h2>
+        <a href='correct.html'>Управление пользователями</a>
+        <a href='admin.html' id='viewOrdersLink'>Заявки пользователей</a> 
+        <a id='logoutBtn' href='#'>Выход</a> 
+    </div>
+
+    <section class='admin-panel' id='adminContent' style='display:none;'> 
+        <h2>Заказы мероприятий</h2> 
+       
+        <table id='orderTable'> 
+            <thead> 
+                <tr> 
+                    <th>Код мероприятия</th> 
+                    <th>Название мероприятия</th> 
+                    <th>Дата и время проведения</th> 
+                    <th>Место проведения</th> 
+                    <th>Ответственное лицо</th> 
+                    <th>Список участников</th> 
+                    <th>Состояние</th> 
+                    <th>Действия</th>  
+                </tr> 
+            </thead> 
+            <tbody></tbody> 
+        </table>
+
+        <div id='orderMessage'></div>
+
+    </section>
+</body>
+</html>

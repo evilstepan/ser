@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/kabinet.css">
+    <script src="script/lich.js" defer></script> 
+</head>
+<body>
+    <div class="container">
+        <h1>Личный кабинет</h1>
+        <div class="profile-info">
+            <a class="text-shapka" href="index7.html">
+                <img src="img/free-icon-boy-4537069.png" alt="Фото профиля" class="profile-pic" id="profile-pic">
+            </a>
+            <div class="user-details">
+                <h2 id="user-name">Иван Иванов</h2>
+                <p id="user-email">Email: ivan@example.com</p>
+                <p id="user-phone">Телефон: +7 (999) 123-45-67</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="#" class="menu-item" onclick="toggleEditForm()">Редактировать профиль</a>
+            <a href="#" class="menu-item" onclick="toggleEventsList()">Моя История</a>
+            <a href="#" class="menu-item" onclick="toggleOrderEventForm()">Заказать мероприятие</a>
+            <a href="#" class="menu-item" onclick="toggleAcceptedEventsList()">Принятые мероприятия</a> <!-- Изменено -->
+            <a href="#" class="menu-item" onclick="logout()">Выйти</a>
+        </div>
+
+        <div class="edit-form" id="edit-form" style="display: none;">
+            <h3>Редактировать профиль</h3>
+            <input type="text" id="edit-name" placeholder="Имя" />
+            <input type="email" id="edit-email" placeholder="Email" />
+            <input type="tel" id="edit-phone" placeholder="Телефон" />
+            <button onclick="saveProfile()">Сохранить</button>
+        </div>
+
+        <div class='order-event-form' id='order-event-form' style='display: none;'>
+            <h3>Заказать мероприятие</h3>
+            <input type='text' id='event-code' placeholder='Код мероприятия' />
+            <input type='text' id='event-name' placeholder='Название мероприятия' />
+            <input type='datetime-local' id='event-date-time' min="1000-01-01T00:00" max="9999-12-31T23:59" />
+            <input type='text' id='event-location' placeholder='Место проведения' />
+            <input type='text' id='event-responsible' placeholder='Ответственное лицо' />
+            <input type='text' id='event-participants' placeholder='Список участников (через запятую)' />
+            <input type='file' id='event-image' accept='image/*' />
+            <textarea id='event-description' placeholder='Описание мероприятия'></textarea>
+            <button onclick='orderEvent()'>Заказать</button>
+        </div>
+
+        <!-- Новый контейнер для принятых мероприятий -->
+        <div class='accepted-events-list' id='accepted-events-list' style='display: none;'>
+            <h3>Принятые мероприятия</h3>
+            <div class='accepted-events-container'></div> <!-- Контейнер для карточек мероприятий -->
+        </div>
+
+        <!-- Список мероприятий -->
+        <div class='orders-list' id='events-list' style='display: none;'>
+            <h3>Мои мероприятия</h3>
+            <table class='events-table'>
+                <thead>
+                    <tr>
+                        <th>Код мероприятия</th>
+                        <th>Название мероприятия</th>
+                        <th>Дата и время проведения</th>
+                        <th>Место проведения</th>
+                        <th>Ответственное лицо</th>
+                        <th>Список участников</th>
+                        <th>Описание</th> 
+                        <th>Изображение</th> 
+                        <th>Состояние заказа</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

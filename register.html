@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="script/register.js" defer></script>
+
+</head>
+<body>
+    <section class="signup">
+        <h2>Стань участником Организации</h2>
+        <p>Посетители, зарегистрированные на сайте, получают рассылки, а также узнают, на какие мероприятия записаны.</p>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Ваше ФИО</label>
+                <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+7(906)-561-43-22">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required minlength="6" title="Пароль должен содержать минимум 6 символов.">
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Повторите пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Укажите дату рождения:</label>
+                <input type="date" id="date" name="date" required max="<?php echo date('Y-m-d', strtotime('-18 years')); ?>">
+            </div>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </section>
+</body>
+</html>

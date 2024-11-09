@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сброс пароля</title>
+    <link rel="stylesheet" href="css/style3.css"> 
+    <script src="script/sbros.js" defer></script> 
+</head>
+<body>
+    <h2>Сброс пароля</h2>
+    <form id="resetPasswordForm">
+        <label for="email">Введите вашу электронную почту:</label>
+        <input type="email" id="email" required>
+        <button type="submit">Отправить ссылку для сброса пароля</button>
+    </form>
+
+ 
+    <div id="resetLinkContainer" style="display: none;">
+        <p>Ссылка для сброса пароля:</p>
+        <input type="text" id="resetLink" readonly>
+        <button id="copyButton">Скопировать ссылку</button>
+        <p id="copyMessage" style="color: green; display: none;">Ссылка скопирована!</p>
+    </div>
+
+   
+    <div id="message"></div> 
+</body>
+</html>

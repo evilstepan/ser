@@ -1,0 +1,153 @@
+body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .signup {
+      text-align: center;
+      margin-top: 255px;
+      width: 100%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffffff; 
+      padding: 20px; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .signup h2 {
+      margin-bottom: 20px;
+      color: #333; 
+  }
+  
+  .signup p {
+      margin-bottom: 20px;
+      color: #666; 
+  }
+  
+  .signup form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .form-group {
+      margin-bottom: 15px; 
+  }
+  
+  .signup label {
+      text-align: left;
+      display: block;
+      font-size: 16px;
+      color: #555; 
+  }
+  
+  .signup input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 97%;
+  }
+  
+  .signup button {
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff; 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .signup button:hover {
+      background-color: #0056b3;
+  }
+  
+  .signup a{
+      display: flex;
+      justify-content: flex-end;
+      margin: 5px;
+      text-decoration: none;
+      color: #007bff;
+  }
+  .ioio{
+      color: #666;
+  }
+
+
+
+  .profile-icon {
+      display: none;
+      width: 30px; 
+      height: 30px; 
+      background-image: url('img/free-icon-boy-4537069.png'); 
+      background-size: cover;
+      margin-left: 10px; 
+      vertical-align: middle;
+  }
+  .icon-container {
+      display: flex;
+      align-items: center; 
+  }
+
+
+ 
+
+
+
+h2 {
+    color: #4a90e2;
+    margin-bottom: 20px; 
+}
+
+
+#resetPasswordForm {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+
+button {
+    background-color: #4a90e2; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #357ab8; 
+}
+
+
+#resetLinkContainer {
+    margin-top: 20px; 
+}
+
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
